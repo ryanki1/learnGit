@@ -1,0 +1,37 @@
+ <tabset data-justified="true">
+  <tab style="outline: none;" data-heading="Tab One">
+    Content for Tab Ouan
+  </tab>
+  <tab style="outline: none;" active="true" data-heading="Dhcp Server">
+    <form class="col-xs-12">
+      <div class="checkbox col-sm-offset-3 col-sm-3">
+        <label for="dsCheckbox" style="padding-left: 0px; margin-top:15px;">
+          <span style="font-size: large;" class="glyphicon" ng-class="{'glyphicon-check': enableDhcpServer, 'glyphicon-unchecked': !enableDhcpServer}"></span>
+          <input type="checkbox" id="dsCheckbox" style="opacity: 0;" ng-model="enableDhcpServer"/>
+          <span style="font-weight:bold;">Enable Dhcp Server</span>
+        </label>
+      </div>
+      <div class="form-group col-sm-3">
+        <label for="defaultLeaseTime">Default Lease Time</label>
+        <input class="form-control" type="text" id="defaultLeaseTime"/>
+      </div>
+      <div class="form-group col-sm-offset-3 col-sm-3">
+        <label for="dynamicDhcpScopes">Dynamic Dhcp Scopes</label>
+        <select id="dynamicDhcpScopes" class="form-control">
+          <option value="">Please select a value..</option>
+          <option value="1">Race100</option>
+          <option value="2">Relay200</option>
+          <option value="3">Decathalon300</option>
+        </select>
+      </div>
+      <div class="form-group col-sm-3">
+        <label for="comment">Comment</label>
+        <textarea class="form-control" name="" id="comment" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+  </tab>
+  <tab style="outline: none;" data-heading="Tab Three">
+    Content for Tab Three
+  </tab>
+</tabset>
+
